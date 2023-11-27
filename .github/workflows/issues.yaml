@@ -2,8 +2,7 @@ name: Auto-label Issues
 
 on:
   issues:
-    types:
-      - opened
+    types: [opened]
 
 jobs:
   add-label:
