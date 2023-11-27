@@ -27,3 +27,4 @@ jobs:
     steps:
     - name: Run deploy 
       run: echo "Running deploy jobs"
+      shell: bash
