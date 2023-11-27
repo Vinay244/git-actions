@@ -7,8 +7,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+    #- name: Checkout repository
+    #  uses: actions/checkout@v2
 
     - name: Use Docker container action
       uses: docker://alpine:3.14
