@@ -15,7 +15,7 @@ jobs:
 
     - name: Add labels
       run: |
-        # Extract the issue title a
+        # Extract the issue title all
         ISSUE_TITLE=$(jq -r .issue.title "$GITHUB_EVENT_PATH")
 
         # Add labels based on the issue title
