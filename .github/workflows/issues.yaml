@@ -3,6 +3,9 @@ name: Auto-label Issues
 on:
   issues:
     types: [opened]
+  push:
+    branches:
+      - main
 
 jobs:
   add-label:
