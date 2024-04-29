@@ -1,28 +1,25 @@
-name: Docker Container Action 
+name: Docker Container Action
 
 on: [push]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
+      - name: Use Docker container action
+        uses: docker://alpine:3.14
+        with:
+          args: echo "Hello from Docker container action"
 
-    - name: Use Docker container action
-      uses: docker://alpine:3.14
-      with:
-        args: echo "Hello from Docker container action"
   test:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Run tests
-      run: echo "Running tests job"
+      - name: Run tests
+        run: echo "Running tests job"
 
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Run deploy 
-      run: echo "Running deploy jobs"
-      shell: bash
+      - name: Run deploy
+        run: echo "Running deploy jobs"
+        shell: bash
