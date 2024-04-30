@@ -19,5 +19,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run deploy
-        run: echo "Running deploy jobss..."
+        run: echo "Running deploy jobs..."
         shell: bash
