@@ -1,7 +1,5 @@
 name: Docker Container Action
-
 on: [push]
-
 jobs:
   build:
     runs-on: ubuntu-latest
