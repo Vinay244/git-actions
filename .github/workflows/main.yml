@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run tests
-        run: echo "Running tests job..................!!!!!!!!!!!!!!!!!!"
+        run: echo "Running tests jobs!.."
 
   deploy:
     runs-on: ubuntu-latest
